@@ -26,10 +26,10 @@ class MyApp extends StatelessWidget {
         Container(
             margin:
                 const EdgeInsets.only(left: 15, top: 15, right: 15, bottom: 15),
-            height: 600,
+            height: 500,
             width: 10000,
             decoration: BoxDecoration(
-              color: Colors.amber[100],
+              color: Colors.amber[50],
             ),
             child: Column(children: const <Widget>[
               Image(
@@ -42,15 +42,50 @@ class MyApp extends StatelessWidget {
                   style: TextStyle(fontSize: 16, color: Colors.grey)),
               Text('★★★★☆', style: TextStyle(fontSize: 16, color: Colors.red)),
             ])),
-        Column(children: const <Widget>[
-          Text(
+        Column(children: <Widget>[
+          const Text(
             'Description',
             style: TextStyle(fontSize: 24.0, color: Colors.black),
           ),
-          Text('Description here',
-              style: TextStyle(fontSize: 12, color: Colors.black)),
-          Text('do a row with the labels',
-              style: TextStyle(fontSize: 12, color: Colors.red)),
+          const Text(
+              'Composed with the skills of a master, the novel is a haunted ogyssey through present day America and a drama of enthralling and acuity.',
+              style: TextStyle(fontSize: 18, color: Colors.grey)),
+          Row(children: <Widget>[
+            Container(
+              margin: const EdgeInsets.only(left: 15, right: 15, top: 15),
+              height: 30,
+              width: 150,
+              color: Colors.orange[100],
+              child: const Text('Fictional prose',
+                  style: TextStyle(fontSize: 15, color: Colors.grey)),
+            ),
+            Container(
+              margin: const EdgeInsets.only(left: 15, right: 15, top: 15),
+              height: 30,
+              width: 80,
+              color: Colors.pink[100],
+              child: const Text(
+                'Novel',
+                style: TextStyle(fontSize: 15, color: Colors.grey),
+              ),
+            ),
+            Container(
+              margin: const EdgeInsets.only(left: 15, right: 15, top: 15),
+              height: 30,
+              width: 80,
+              color: Colors.blue[100],
+              child: const Text('Thriller',
+                  style: TextStyle(fontSize: 15, color: Colors.grey)),
+            ),
+          ]),
+          Container(
+            margin: const EdgeInsets.only(top: 15, bottom: 15),
+            height: 50,
+            width: 300,
+            color: Colors.black,
+            child: const Text('Buy this book',
+                style: TextStyle(fontSize: 20, color: Colors.white)),
+          )
         ])
       ]),
     ));

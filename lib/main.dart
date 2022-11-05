@@ -60,9 +60,10 @@ class MyApp extends StatelessWidget {
         Column(children: <Widget>[
           Container(
             width: 1000,
-            margin: const EdgeInsets.only(right: 15, left: 15),
+            margin: const EdgeInsets.only(right: 15, left: 50, bottom: 20),
             child: Row(children: <Widget>[
               Container(
+                alignment: Alignment.centerLeft,
                 child: Text(
                   'Description',
                   style: TextStyle(
@@ -78,7 +79,7 @@ class MyApp extends StatelessWidget {
                 child: const Align(
                   alignment: Alignment.centerRight,
                   child: Text(
-                    '12',
+                    r'$12',
                     style: TextStyle(
                       decoration: TextDecoration.none,
                       fontSize: 18,
@@ -92,7 +93,7 @@ class MyApp extends StatelessWidget {
             ]),
           ),
           Container(
-            margin: const EdgeInsets.only(right: 15, left: 15),
+            margin: const EdgeInsets.only(right: 15, left: 50),
             child: const Text(
                 'Composed with the skills of a master, the novel is a haunted odyssey through present day America and a drama of enthralling and acuity.',
                 style: TextStyle(
